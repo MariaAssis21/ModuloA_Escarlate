@@ -13,8 +13,8 @@ if(!isset($_SESSION['usuario_id'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de Controle - Sistema de Reservas </title>
-    <link rel="stylesheet" href="painel.css">
+    <title>Home || Youtan</title>
+    <link rel="stylesheet" href="css/painel.css">
 </head>
 <main>
     <div class="container_painel">
@@ -25,9 +25,10 @@ if(!isset($_SESSION['usuario_id'])){
 
           <div class="servicos">
             <ul>
-                <li><a href="cadastro_ativos">Cadastro Ativos</a></li>
-                <li><a href="cadastro_destinatarios">Cadastro Destinatários</a></li>
-                <li><a href="cadastro_manutencao">Cadastro Manutenção</a></li>
+                <li><a href="cadastro_ativo.php">Cadastro Ativos</a></li>
+                <li><a href="cadastro_destinatarios.php">Cadastro Destinatários</a></li>
+                <li><a href="cadastro_manutencao.php">Cadastro Manutenção</a></li>
+                <li><a href="painel_monitoramento.php">Painel de Monitoramento</a></li>
             </ul>
           </div>
          <hr>  
