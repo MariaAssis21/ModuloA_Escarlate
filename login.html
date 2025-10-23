@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="menu_header">
+        <nav class="menu_nav">
+            <h1 class="youtan">Youtan</h1>
+            <ul class="menu_list">
+                <li><a href="#" class="menu_link">HOME</a></li>
+                <li><a href="#" class="menu_link">SOBRE</a></li>
+
+
+                <li class="menu_servico">
+            <a href="#">SERVIÇOS</a>
+            <ul class="opcoes_servicos">
+         <li><a href="experiências.html">EXPERIÊNCIAS</a></li>
+                <li><a href="hospedagens.html">HOSPEDAGENS</a></li>
+                <li><a href="pacotes.html">PACOTES</a></li>
+            </ul>
+        </li>
+
+
+                <li><a href="#" class="menu_link">CONTATO</a></li>
+                <li><a href="#" class="Entrar">ENTRAR</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+  <div id="formulario_login">
+    <h1>Login</h1>
+    <form action="processa_login.php" method="POST">
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+
+
+      <button type="submit">Logar</button>
+    </form>
+
+    <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+  </div>
+</main>
+</body>
+</html>
