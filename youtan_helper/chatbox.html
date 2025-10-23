@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Youtan Helper</title>
+<style>
+  /* Botão flutuante */
+  #chatbot-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4F46E5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  /* Janela do chat */
+  #chatbot-window {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 400px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+  }
+
+  #chatbot-header {
+    background: #4F46E5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  .msg {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 8px;
+    max-width: 80%;
+  }
+
+  .user { background: #E0E7FF; align-self: flex-end; }
+  .bot { background: #F3F4F6; }
+
+  #chatbot-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+
+  #chatbot-input input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+  }
+
+  #chatbot-input button {
+    background: #4F46E5;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<button id="chatbot-btn">💬</button>
+
+<div id="chatbot-window">
+  <div id="chatbot-header">Youtan Helper</div>
+  <div id="chatbot-messages"></div>
+  <div id="chatbot-input">
+    <input type="text" id="userInput" placeholder="Pergunte algo...">
+    <button id="sendBtn">➤</button>
+  </div>
+</div>
+
+<script src="chatbot.js"></script>
+</body>
+</html>
