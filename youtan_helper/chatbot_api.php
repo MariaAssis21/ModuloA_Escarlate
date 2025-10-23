@@ -3,7 +3,7 @@ header("Content-Type: application/json");
 
 // substitua pela sua chave da OpenAI
 //caso não exista pegue sua chave no site da openAI
-$apiKey = "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";
+$apiKey = "";
 
 $data = json_decode(file_get_contents("php://input"), true);
 $userMessage = $data["message"] ?? "";
